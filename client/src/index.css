@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Add a subtle background mesh gradient or blur */
+  background-image: radial-gradient(circle at top left, rgba(123, 97, 255, 0.15), transparent 400px),
+    radial-gradient(circle at bottom right, rgba(255, 77, 77, 0.1), transparent 400px);
+  background-attachment: fixed;
+}
+
+:root {
+  /* Default to dark mode variables */
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-bg-hover: rgba(255, 255, 255, 0.08);
+  --glass-bg-active: rgba(255, 255, 255, 0.12);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-border-hover: rgba(255, 255, 255, 0.2);
+  --text-muted: rgba(255, 255, 255, 0.55);
+}
+
+.light-mode {
+  /* Light mode variables - use dark transparent colors for contrast against #fafafa */
+  --glass-bg: rgba(0, 0, 0, 0.04);
+  --glass-bg-hover: rgba(0, 0, 0, 0.08);
+  --glass-bg-active: rgba(0, 0, 0, 0.12);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --glass-border-hover: rgba(0, 0, 0, 0.2);
+  --text-muted: rgba(0, 0, 0, 0.55);
+}
+
+.dark-mode {
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-bg-hover: rgba(255, 255, 255, 0.08);
+  --glass-bg-active: rgba(255, 255, 255, 0.12);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-border-hover: rgba(255, 255, 255, 0.2);
+  --text-muted: rgba(255, 255, 255, 0.55);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+}
