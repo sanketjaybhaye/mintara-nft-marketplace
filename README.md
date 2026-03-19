@@ -84,6 +84,8 @@ npm install
 npm start
 ```
 *The app should now be running at [http://localhost:3000](http://localhost:3000).*
+<img width="1844" height="889" alt="image" src="https://github.com/user-attachments/assets/0d382f92-ec83-411c-85a7-48488ffb8f09" />
+<img width="1849" height="1027" alt="image" src="https://github.com/user-attachments/assets/3462959c-675c-4277-9ba0-2282911bf1d8" />
 
 ### 5. Configure MetaMask Network
 
